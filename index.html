@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LazyHash — More useful work per watt</title>
+
+  <meta
+    name="description"
+    content="LazyHash is an early-stage lab for energy-aware compute — combining GPU workloads, Bitcoin mining efficiency, solar energy, batteries and adaptive scheduling."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">LazyHash</a>
+
+    <nav class="nav">
+      <a href="#compute">Compute</a>
+      <a href="#mining">Mining</a>
+      <a href="#energy">Energy</a>
+      <a href="#lab">Lab</a>
+      <a href="#roadmap">Roadmap</a>
+      <a class="nav-cta" href="https://gpurenderstudio.com" target="_blank" rel="noopener">
+        GPU Render Studio ↗
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Energy-aware compute lab</p>
+
+        <h1>More useful work per watt.</h1>
+
+        <p class="hero-text">
+          LazyHash is an early-stage lab for energy-aware compute — combining GPU workloads,
+          Bitcoin mining efficiency, solar energy, batteries and adaptive scheduling.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#lab">Explore the Lab</a>
+          <a class="button secondary" href="https://gpurenderstudio.com" target="_blank" rel="noopener">
+            Visit GPU Render Studio
+          </a>
+        </div>
+      </div>
+
+      <div class="system-card" aria-label="Energy-aware compute system diagram">
+        <div class="system-row">
+          <span>Solar</span>
+          <span>Battery</span>
+          <span>Grid</span>
+        </div>
+
+        <div class="system-arrow">↓</div>
+
+        <div class="system-core">
+          Energy Layer
+          <small>price · state · priority · capacity</small>
+        </div>
+
+        <div class="system-arrow">↓</div>
+
+        <div class="system-row">
+          <span>GPU Render</span>
+          <span>AI Batch</span>
+          <span>ASIC Mining</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section narrow">
+      <p class="section-kicker">What is LazyHash?</p>
+      <h2>Compute should not run blindly.</h2>
+      <p>
+        LazyHash explores how hardware can do more useful work with less waste:
+        render jobs when capacity is available, mine only when it makes sense,
+        buffer workloads with batteries, and adapt power use to real-world conditions.
+      </p>
+    </section>
+
+    <section class="section project-highlight">
+      <div>
+        <p class="section-kicker">First commercial project</p>
+        <h2>GPU Render Studio</h2>
+        <p>
+          GPU Render Studio is our first focused compute service, built for Blender rendering
+          and GPU workloads. LazyHash develops the broader efficiency layer behind scheduling,
+          benchmarks and energy-aware operation.
+        </p>
+      </div>
+
+      <a class="button primary" href="https://gpurenderstudio.com" target="_blank" rel="noopener">
+        Open GPU Render Studio ↗
+      </a>
+    </section>
+
+    <section class="section" id="compute">
+      <p class="section-kicker">Project tracks</p>
+      <h2>One system, several layers.</h2>
+
+      <div class="track-grid">
+        <article class="track-card">
+          <span class="status active">Active</span>
+          <h3>Compute Layer</h3>
+          <p>
+            GPU rendering, AI batch workloads and future worker nodes routed by priority,
+            availability and energy conditions.
+          </p>
+        </article>
+
+        <article class="track-card" id="mining">
+          <span class="status testing">Lab testing</span>
+          <h3>Mining Layer</h3>
+          <p>
+            Bitcoin mining efficiency, ASIC undervolting, immersion cooling and flexible-load
+            experiments.
+          </p>
+        </article>
+
+        <article class="track-card">
+          <span class="status concept">Architecture</span>
+          <h3>Energy Layer</h3>
+          <p>
+            Solar-aware compute, battery-buffered workloads, electricity price logic and
+            adaptive power control.
+          </p>
+        </article>
+
+        <article class="track-card">
+          <span class="status notes">Open notes</span>
+          <h3>LazyHash Lab</h3>
+          <p>
+            Benchmarks, architecture notes, experiments and a public roadmap for what is being
+            built next.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="energy">
+      <div>
+        <p class="section-kicker">Energy Layer</p>
+        <h2>Compute should follow energy.</h2>
+        <p>
+          The Energy Layer connects solar production, battery storage, electricity pricing and
+          workload scheduling.
+        </p>
+        <p>
+          The goal is to run flexible workloads when energy is available, cheap or strategically
+          useful — and pause, delay or undervolt them when it is not.
+        </p>
+      </div>
+
+      <div class="flow-card">
+        <div class="flow-item">Solar production</div>
+        <div class="flow-item">Battery state</div>
+        <div class="flow-item">Electricity price</div>
+        <div class="flow-item">Grid limits</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-core">Run · Delay · Undervolt · Pause</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-item">GPU · AI · ASIC workloads</div>
+      </div>
+    </section>
+
+    <section class="section" id="lab">
+      <p class="section-kicker">Lab notes</p>
+      <h2>Early notes, benchmarks and architecture drafts.</h2>
+
+      <div class="lab-grid">
+        <article class="lab-card">
+          <span class="status notes">Initial note</span>
+          <h3>RTX 5090 Render Efficiency</h3>
+          <p>
+            Measuring render time, power limits and energy per completed GPU job.
+          </p>
+        </article>
+
+        <article class="lab-card">
+          <span class="status concept">Architecture draft</span>
+          <h3>Energy-Aware Scheduling</h3>
+          <p>
+            How LazyHash decides when compute should run, wait, undervolt or pause.
+          </p>
+        </article>
+
+        <article class="lab-card">
+          <span class="status concept">Research track</span>
+          <h3>Solar + Battery Buffered Compute</h3>
+          <p>
+            Exploring how flexible workloads can follow solar production, battery state and
+            electricity price.
+          </p>
+        </article>
+
+        <article class="lab-card">
+          <span class="status testing">Lab testing</span>
+          <h3>ASIC Undervolting Notes</h3>
+          <p>
+            Practical experiments in lower J/TH mining, immersion cooling and older ASIC reuse.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <p class="section-kicker">Roadmap</p>
+      <h2>Early, practical and intentionally transparent.</h2>
+
+      <div class="roadmap-grid">
+        <div class="roadmap-card">
+          <h3>Active</h3>
+          <ul>
+            <li>LazyHash landing page</li>
+            <li>GPU Render Studio starter</li>
+            <li>Compute Layer structure</li>
+            <li>Energy Layer concept</li>
+          </ul>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Testing</h3>
+          <ul>
+            <li>RTX render efficiency benchmarks</li>
+            <li>ASIC undervolting</li>
+            <li>Workload scheduling logic</li>
+            <li>Cheap queue pricing model</li>
+          </ul>
+        </div>
+
+        <div class="roadmap-card">
+          <h3>Future</h3>
+          <ul>
+            <li>Trusted worker nodes</li>
+            <li>AI batch compute</li>
+            <li>Battery-buffered operation</li>
+            <li>Mining pool experiments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join">
+      <p class="section-kicker">Follow the build</p>
+      <h2>LazyHash is early.</h2>
+      <p>
+        Follow the lab as we test GPU rendering, mining efficiency, energy-aware scheduling
+        and battery-buffered compute.
+      </p>
+
+      <form class="signup-form" action="mailto:contact@lazyhash.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Email address" required />
+        <button type="submit">Join updates</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>LazyHash</strong>
+      <p>More useful work per watt.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://gpurenderstudio.com" target="_blank" rel="noopener">GPU Render Studio</a>
+      <a href="#energy">Energy</a>
+      <a href="#lab">Lab</a>
+      <a href="#roadmap">Roadmap</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
